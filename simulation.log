@@ -1,0 +1,65 @@
+[2026-03-14 22:13:48] [Reconnaissance] Starting target system information collection...
+[2026-03-14 22:13:48] [Reconnaissance] Identified Target OS: OS: Windows 11
+[2026-03-14 22:13:49] [Reconnaissance] Scanning common ports: [21, 22, 80, 443, 3389]
+[2026-03-14 22:13:49] [Reconnaissance] Port 21 is CLOSED
+[2026-03-14 22:13:50] [Reconnaissance] Port 22 is CLOSED
+[2026-03-14 22:13:50] [Reconnaissance] Port 80 is OPEN (Service: HTTP/HTTPS)
+[2026-03-14 22:13:51] [Reconnaissance] Port 443 is OPEN (Service: HTTP/HTTPS)
+[2026-03-14 22:13:51] [Reconnaissance] Port 3389 is CLOSED
+[2026-03-14 22:13:51] [Reconnaissance] Phase 1 completed successfully.
+[2026-03-14 22:20:45] [Reconnaissance] Starting target system information collection...
+[2026-03-14 22:20:45] [Reconnaissance] Identified Target OS: OS: Windows 11
+[2026-03-14 22:20:46] [Reconnaissance] Scanning common ports: [21, 22, 80, 443, 3389]
+[2026-03-14 22:20:47] [Reconnaissance] Port 21 is CLOSED
+[2026-03-14 22:20:47] [Reconnaissance] Port 22 is CLOSED
+[2026-03-14 22:20:48] [Reconnaissance] Port 80 is OPEN (Service: HTTP/HTTPS)
+[2026-03-14 22:20:48] [Reconnaissance] Port 443 is OPEN (Service: HTTP/HTTPS)
+[2026-03-14 22:20:49] [Reconnaissance] Port 3389 is CLOSED
+[2026-03-14 22:20:49] [Reconnaissance] Phase 1 completed successfully.
+[2026-03-14 22:20:50] [Initial Access] Simulating Phishing Email delivery...
+[2026-03-14 22:20:51] [Initial Access] User 'Target_Employee' clicked on malicious link: 'http://legit-update.com/patch.exe'
+[2026-03-14 22:20:53] [Initial Access] Payload 'patch.exe' downloaded and executed.
+[2026-03-14 22:20:53] [Initial Access] Checking user privileges... Current User: 'StandardUser'
+[2026-03-14 22:20:53] [Initial Access] Initial Access established successfully.
+[2026-03-14 22:20:54] [C2 Channel] Attempting to establish connection with Attacker IP: 192.168.5.101
+[2026-03-14 22:20:56] [C2 Channel] Connection Established. Encryption: AES-256 enabled.
+[2026-03-14 22:20:57] [C2 Channel] Received command from Attacker: 'whoami'
+[2026-03-14 22:20:57] [C2 Channel] Sending results for 'whoami' back to C2 server.
+[2026-03-14 22:20:58] [C2 Channel] Received command from Attacker: 'hostname'
+[2026-03-14 22:20:58] [C2 Channel] Sending results for 'hostname' back to C2 server.
+[2026-03-14 22:20:59] [C2 Channel] Received command from Attacker: 'net user'
+[2026-03-14 22:20:59] [C2 Channel] Sending results for 'net user' back to C2 server.
+[2026-03-14 22:20:59] [C2 Channel] C2 Channel is now ACTIVE and waiting for instructions.
+[2026-03-14 22:27:46] [Reconnaissance] Starting target system information collection...
+[2026-03-14 22:27:46] [Reconnaissance] Identified Target OS: OS: Windows 11
+[2026-03-14 22:27:47] [Reconnaissance] Scanning common ports: [21, 22, 80, 443, 3389]
+[2026-03-14 22:27:48] [Reconnaissance] Port 21 is CLOSED
+[2026-03-14 22:27:48] [Reconnaissance] Port 22 is CLOSED
+[2026-03-14 22:27:49] [Reconnaissance] Port 80 is OPEN (Service: HTTP/HTTPS)
+[2026-03-14 22:27:49] [Reconnaissance] Port 443 is OPEN (Service: HTTP/HTTPS)
+[2026-03-14 22:27:50] [Reconnaissance] Port 3389 is CLOSED
+[2026-03-14 22:27:50] [Reconnaissance] Phase 1 completed successfully.
+[2026-03-14 22:27:53] [Initial Access] Simulating Phishing Email delivery...
+[2026-03-14 22:27:54] [Initial Access] User 'Target_Employee' clicked on malicious link: 'http://legit-update.com/patch.exe'
+[2026-03-14 22:27:55] [Initial Access] Payload 'patch.exe' downloaded and executed.
+[2026-03-14 22:27:55] [Initial Access] Checking user privileges... Current User: 'StandardUser'
+[2026-03-14 22:27:55] [Initial Access] Initial Access established successfully.
+[2026-03-14 22:28:00] [C2 Channel] Attempting to establish connection with Attacker IP: 192.168.5.101
+[2026-03-14 22:28:02] [C2 Channel] Connection Established. Encryption: AES-256 enabled.
+[2026-03-14 22:28:03] [C2 Channel] Received command from Attacker: 'whoami'
+[2026-03-14 22:28:03] [C2 Channel] Sending results for 'whoami' back to C2 server.
+[2026-03-14 22:28:04] [C2 Channel] Received command from Attacker: 'hostname'
+[2026-03-14 22:28:04] [C2 Channel] Sending results for 'hostname' back to C2 server.
+[2026-03-14 22:28:05] [C2 Channel] Received command from Attacker: 'net user'
+[2026-03-14 22:28:05] [C2 Channel] Sending results for 'net user' back to C2 server.
+[2026-03-14 22:28:05] [C2 Channel] C2 Channel is now ACTIVE and waiting for instructions.
+[2026-03-14 22:28:12] [Privilege Escalation] Scanning for local vulnerabilities (CVE-2023-XXXX)...
+[2026-03-14 22:28:13] [Privilege Escalation] Found misconfigured service: 'Windows-Update-Service'
+[2026-03-14 22:28:13] [Privilege Escalation] Attempting DLL Hijacking attack...
+[2026-03-14 22:28:15] [Privilege Escalation] Exploit successful!
+[2026-03-14 22:28:15] [Privilege Escalation] Permission changed: [Standard User] -> [SYSTEM/ADMINISTRATOR]
+[2026-03-14 22:28:15] [Privilege Escalation] Full administrative control obtained.
+[2026-03-14 22:28:25] [Persistence] Installing persistence mechanisms...
+[2026-03-14 22:28:26] [Persistence] Action: Created Registry Key 'HKCU\Software\Microsoft\Windows\CurrentVersion\Run\SecurityHealthUpdater'
+[2026-03-14 22:28:26] [Persistence] Action: Pointing registry key to malicious payload 'patch.exe'
+[2026-03-14 22:28:27] [Persistence] Persistence established. Attacker will regain access after system reboot.
